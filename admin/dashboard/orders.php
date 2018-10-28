@@ -1,4 +1,8 @@
 <?php
+
+$page = $_SERVER['PHP_SELF'];
+$sec = "5";
+
 session_start();
 $admin = $_SESSION['admin'];
 if(isset($admin)){} else { header('location:login'); }
@@ -12,6 +16,10 @@ if(isset($admin)){} else { header('location:login'); }
 		<!-- CUSTOM JS/CSS -->
 		<link rel="stylesheet" type="text/css" href="../css/admin.css">
 		<meta name="viewport" content="device-width=initial-scale 1.0;">
+
+		<!-- AUTO REFRESH PAGE -->
+		<meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
+
 
 		<!-- FLAT UI JS/CSS -->
 		<link rel="stylesheet" type="text/css" href="../Ui/dist/css/flat-ui.css">
@@ -50,12 +58,12 @@ if(isset($admin)){} else { header('location:login'); }
                         </div>
                         <div class="left2">
                             <i id="burgermenu" class="fa fa-bars" alt="1"></i>
-                        </div>
+                        </div><!--
                         <div class="right">
                             <div class="box">
-                                Welcome Admin <a href="out.php"><i class="fa fa-gear" style="color:white !important;"></i></a>
-                            </div>
-                        </div>
+                                 <a href="out.php"><i class="fa fa-gear" style="color:white !important;"></i></a>
+                            </div> 
+                        </div>-->
                         <div class="right2">
                             <div class="box">
                                 <i class="fa fa-gear"></i>
@@ -63,55 +71,66 @@ if(isset($admin)){} else { header('location:login'); }
                         </div>
         </div>
     	<!-- End of header-->
-    	<!-- Start of sidebar-->
-    	<div class="sidebar"> 
-    		<div class="menu" id="a_accountsss">
-    			<div class="icon">
-    				<i class="fa fa-money"></i>
-    			</div>
-    			<div class="name">
-    				<?php echo $asdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxcasdashfagsnbajknlsjhfgchnnbytcrxrvtfbvnmjnybfctrvdzxertcfvbmjknmhvbrtbvxcesrzxrctvbnuhmbnbygcszaesrcdtvbygnvbtyubfcvvrdxc = $_GET['orderid']; ?>
-    			</div>
-    		</div>
-    	</div>
-        <!-- End of sidebar-->
     	<!-- Start of Content-->
-    	<div class="content">
-                  <?php
-							$conn = mysqli_connect('localhost','root','');
-							$dbconn = mysqli_select_db($conn,'conchos_sisig');
-							$orderid = $_GET['orderid'];
-                            $sql ="SELECT cart.id , cart.prod_id, cart.qty, products.name, products.price, products.description, products.image from cart INNER JOIN products on products.id=cart.prod_id where cart.status='1' and cart.order_id='$orderid'"; 
-                                $result = mysqli_query($conn,$sql);  
+    	<div class="content1">
+			<?php
 
-                                    echo "<table>";
+			include "../php/admin/crud/dbconn.php";
 
-                                        while($rs = mysqli_fetch_array($result)) { 
-                                            $id = $rs["id"]; 
-                                            $prod_id = $rs["prod_id"]; 
-                                            $name = $rs["name"]; 
-                                            $qty = $rs["qty"]; 
-                                            $description = $rs["description"]; 
-                                            $price = $rs["price"];  
-                                            $image = $rs["image"]; 
+			$sql = mysqli_query($conn, "SELECT * FROM cart_orders WHERE status = 1");
+			echo '<div>
+					<br/>
+					<br/>
+					<h2>Pending Orders</h2>
+					<ul>';
+				while($row = mysqli_fetch_array($sql))
+				{
+					$order_id = $row['order_id'];
+					$status = $row['status'];
+					echo '
+						<li>
+							<p><strong>Order ID: </strong>'.$row['order_id'].'<span style="display:inline-block; width:45%;"></span>
+							<strong>Date: </strong>'.$row['date'].'</p>
+							<table>
+								<thead>
+									<td><b>Product ID</b></td>
+									<td><b>Name</b></td>
+									<td><b>Quantity</b></td>
+								</thead>
+					';
 
-                                                echo "<tr>
-                                                            <td><img src='admin/img/uploads/$image'><br></td>
-                                                            <td>$name</td>
-                                                            <td class='desc'>$description</td>
-                                                            <td></td>
-                                                            <td>P $price</td>
-                                                            <td>$qty</td> 
-                                                      </tr>";
-                                        } 
-                                    echo "</table>";
-                            ?>
+					$sql1 = mysqli_query($conn, "SELECT * FROM cart WHERE order_id = '$order_id';");
+					while($row1 = mysqli_fetch_array($sql1))
+					{
+						$product_id = $row1['prod_id'];
+						$sql2 = mysqli_query($conn, "SELECT * FROM products WHERE id = $product_id");
+						while($row2 = mysqli_fetch_array($sql2))
+						{  
+							$item_name = $row2['name'];
+							echo'
+									<tr>
+										<td>'.$row1['prod_id'].'</td> 
+										<td>'.$item_name.'</td>
+										<td>'.$row1['qty'] .'</td>
+									</tr>
+								</li>
+							';
+							
+						}
+					}echo '</table>
+							<br/>';
+				?>
+						
+						<?php
+				}
+
+			?>
     	</div>
         <!-- End of Content-->
 
         <!-- Start of footer-->
         <div class="footer">
-            Copyright &copy 2016 - Concho's Sisis Admin Dashboard
+            Developed by MIS Student &copy 2018
         </div>
         <!-- End of footer-->
 

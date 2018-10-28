@@ -1,48 +1,11 @@
 <?php
 
 include "dbconn.php";
- /*
-$sql ="SELECT cart.id , cart.prod_id, cart.qty, cart.order_id, products.name, products.price, products.description from cart INNER JOIN products on products.id=cart.prod_id where cart.status='1'";
-//$sql1 = "SELECT DISTINCT order_id FROM cart WHERE status = 1";
 
-$result = mysqli_query($conn,$sql);
-//$result2 = mysqli_query($conn, $sql1);
-
-    echo "<table>";
-
-        echo '
-            <thead>
-                <td><b>Order ID</b></td>
-                <td><b>Name</b></td>
-                <td><b>Quantity</b></td>
-                <td><b>Price</b></td>
-            </thead>
-        ';
-
-        while($rs = mysqli_fetch_array($result)) { 
-            $id = $rs["id"]; 
-            $prod_id = $rs["prod_id"];
-            $order_id = $rs["order_id"];
-            $name = $rs["name"]; 
-            $qty = $rs["qty"]; 
-            $description = $rs["description"]; 
-            $price = $rs["price"];
-
-           
-                echo "<tr>
-                            <td><b>$order_id</b></td>
-                            <td>$name</td>
-                            <td>$qty</td> 
-                            <td>P $price</td>
-                      </tr>";
-          
-        } 
-    echo "</table>";
-*/
-
-$sql = mysqli_query($conn, "SELECT * FROM cart_orders WHERE status = 1");
+$sql = mysqli_query($conn, "SELECT * FROM cart_orders ORDER BY id DESC");
 echo '<div>
         <h2>Orders</h2>
+        <span style="display:inline-block; width:100%;"><b>Status:</b> 1 = Yet to be Delivered <br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4 = Delivered
         <ul>';
     while($row = mysqli_fetch_array($sql))
     {
@@ -50,7 +13,7 @@ echo '<div>
         $status = $row['status'];
         echo '
             <li>
-                <p><strong>Order ID: </strong>'.$row['order_id'].'<span style="display:inline-block; width:65%;"></span>
+                <p><strong>Status: </strong>'.$row['status'].'&nbsp&nbsp&nbsp&nbsp<strong>Order ID: </strong>'.$row['order_id'].'<span style="display:inline-block; width:30%;"></span>
                 <strong>Date: </strong>'.$row['date'].'</p>
                 <table>
                     <thead>
@@ -81,12 +44,12 @@ echo '<div>
         }echo '</table>
                 <br/>';
     ?>
-               <form method = "post" action="update-order.php">
+               <!-- <form method = "post" action="update-order.php">
                 <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
                 <span style="display:inline-block; width:90%;"></span><input type="submit" value="Delivered">
-                </form>               
+                </form>                 -->
                
-               <hr>
+               <hr> 
                <?php
     }
 

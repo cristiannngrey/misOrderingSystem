@@ -16,7 +16,7 @@ $order_id = $_POST['id'];
 			$row9 = mysqli_fetch_array($result9);
 				$name9 = $row9['name'];
 			
-					$sql8 = "INSERT INTO notifications values('','$name9',CURRENT_TIMESTAMP,'Canceled Order','0')";
+					$sql8 = "INSERT INTO notifications values('','$name9',CURRENT_TIMESTAMP,'Delivered Order','0')";
 					$result8 = mysqli_query($conn,$sql8); 
 
 ?>

@@ -5,11 +5,12 @@ include "dbconn.php";
 		    <tr> 
 		        <th>Id</th>
 		        <th>Date</th>
-		        <th>Email</th>
+		        <th>User</th>
 			    <th>Total</th> 
 		    </tr>";
 
-  $sql = "SELECT * FROM cart_orders where status='3'";
+  $sql = "SELECT * FROM cart_orders where status='1'";
+  $sales = 0;
   $result = mysqli_query($conn,$sql);
 	  while($row = mysqli_fetch_array($result)){
 	  		$id = $row['id'];
@@ -26,7 +27,7 @@ include "dbconn.php";
 			                    <td>$total</td>
 			                </tr>";
 
-			@$sales+= @str_replace("P","",$total);     
+			$sales += str_replace("P","",$total);     
 	 
 	  }  
 			echo "</table>"; 

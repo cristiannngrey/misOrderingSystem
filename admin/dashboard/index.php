@@ -118,7 +118,7 @@ if(isset($admin)){} else { header('location:login'); }
         <!-- End of sidebar-->
     	<!-- Start of Content-->
     	<div class="content">
-          Kenneh abenojar
+          WELCOME!!
     	</div>
         <!-- End of Content-->
 
@@ -156,7 +156,7 @@ if(isset($admin)){} else { header('location:login'); }
 								<input type="text" name="name"  id="name" placeholder="Name" required="">
 								<input type="number" name="price" id="price" placeholder="Price" required="">
 								<select name="category" required="" id="category">
-										<option value="Sisig">Sisig</option>
+										<!--	<option value="Sisig">Sisig</option>	-->
 										<option value="Main-Meals">Main Meals</option>
 										<option value="For Kids">For Kids</option>
 										<option value="Desserts">Desserts</option>
