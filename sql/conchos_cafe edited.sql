@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `conchos_sisig`
+-- Database: `artizan_cafe`
 --
 
 -- --------------------------------------------------------
@@ -59,27 +59,9 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id`, `cust_email`, `prod_id`, `qty`, `status`, `order_id`) VALUES
-(2, 'alakneth@gmail.com', '3', '6', '1', 'FKQHzi3GLb'),
-(3, 'alakneth@gmail.com', '1', '13', '1', 'FKQHzi3GLb'),
-(4, 'alakneth@gmail.com', '7', '1', '1', 'FKQHzi3GLb'),
-(5, 'alakneth@gmail.com', '2', '2', '1', 'FKQHzi3GLb'),
-(6, 'alakneth@gmail.com', '2', '4', '4', 'uKqkIBYmXa'),
-(7, 'alakneth@gmail.com', '1', '2', '4', 'uKqkIBYmXa'),
-(8, 'alakneth@gmail.com', '3', '1', '4', 'uKqkIBYmXa'),
-(10, 'alakneth@gmail.com', '3', '1', '1', 'J3Q4he1IUn'),
-(11, 'alakneth@gmail.com', '7', '1', '1', 'J3Q4he1IUn'),
-(12, 'alakneth@gmail.com', '8', '1', '1', 'J3Q4he1IUn'),
-(13, 'alakneth@gmail.com', '2', '1', '0', ''),
-(14, 'kier.abenojar@gmail.com', '2', '1', '1', '8CylGXo93z'),
-(15, 'kier.abenojar@gmail.com', '3', '1', '1', '8CylGXo93z'),
-(16, 'test@gmail.com', '16', '3', '1', 'a6qP4jxi2X'),
-(17, 'test@gmail.com', '39', '1', '1', 'a6qP4jxi2X'),
-(18, 'test@gmail.com', '43', '5', '1', 'a6qP4jxi2X'),
-(19, 'test@gmail.com', '5', '1', '4', 'PRMIdleFtr'),
-(20, 'test@gmail.com', '7', '1', '4', 'PRMIdleFtr'),
-(21, 'test@gmail.com', '12', '1', '4', 'PRMIdleFtr'),
-(23, 'test@gmail.com', '13', '1', '4', 'PRMIdleFtr');
-
+(2, 'ch@gmail.com', '3', '6', '1', 'FKQHzi3GLb'),
+(3, 'ch@gmail.com', '1', '13', '1', 'FKQHzi3GLb'),
+(4, 'ch@gmail.com', '7', '1', '1', 'FKQHzi3GLb');
 -- --------------------------------------------------------
 
 --
@@ -100,9 +82,9 @@ CREATE TABLE `cart_orders` (
 --
 
 INSERT INTO `cart_orders` (`id`, `order_id`, `cust_email`, `date`, `total`, `status`) VALUES
-(1, 'FKQHzi3GLb', 'alakneth@gmail.com', '2016-04-05 01:58:14', 'P3970', '1'),
-(2, 'uKqkIBYmXa', 'alakneth@gmail.com', '2016-04-05 01:57:57', 'P1910', '3'),
-(3, 'J3Q4he1IUn', 'alakneth@gmail.com', '2016-09-22 09:55:54', 'P270', '1'),
+(1, 'FKQHzi3GLb', 'ch@gmail.com', '2016-04-05 01:58:14', 'P3970', '1'),
+(2, 'uKqkIBYmXa', 'ch@gmail.com', '2016-04-05 01:57:57', 'P1910', '3'),
+(3, 'J3Q4he1IUn', 'ch@gmail.com', '2016-09-22 09:55:54', 'P270', '1'),
 (4, '8CylGXo93z', 'kier.abenojar@gmail.com', '2016-12-30 09:06:31', 'P500', '1'),
 (5, 'a6qP4jxi2X', 'test@gmail.com', '2016-12-30 09:18:48', 'P670', '2'),
 (6, 'PRMIdleFtr', 'test@gmail.com', '2016-12-30 09:19:20', 'P845', '4');
@@ -128,11 +110,11 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `date`, `name`, `contact`, `email`, `message`, `push`) VALUES
-(1, '2016-03-20 12:31:57', 'Kenneth abenojar', '09489101882', 'alakneth@gmail.com', 'Sino nag aabang ZRAT - LAN Hack\r\npopost ko ung link pag tapos at ready na.\r\nComment sa mga Beta Testers ng ZRAT - LAN HACK\r\nNOTE: NO NEED FUD CRYPTER di to madedetect.', ''),
+(1, '2016-03-20 12:31:57', 'Kenneth abenojar', '09489101882', 'ch@gmail.com', 'Sino nag aabang ZRAT - LAN Hack\r\npopost ko ung link pag tapos at ready na.\r\nComment sa mga Beta Testers ng ZRAT - LAN HACK\r\nNOTE: NO NEED FUD CRYPTER di to madedetect.', ''),
 (2, '2016-03-20 13:16:19', 'Dainae', '9481178', 'daiana@gmail.com', 'mga kaibigan, konting tulong naman oh.. nahihiya man akong lumapit wala na akong choice..\r\ndi kasi ako makapag import ng kahit anong file sa Visual basic 2012,..mapa image, mag open file, at mag connect ng ', ''),
-(4, '2016-04-05 01:55:53', 'kenneth', '09489101882', 'alakneth@gmail.com', 'TEST', ''),
-(5, '2016-04-05 01:56:55', 'asd', '41231', 'alakneth@gmail.com', 'asd', ''),
-(6, '2016-04-05 01:57:26', 'asd', '41231', 'alakneth@gmail.com', 'asd', '');
+(4, '2016-04-05 01:55:53', 'kenneth', '09489101882', 'ch@gmail.com', 'TEST', ''),
+(5, '2016-04-05 01:56:55', 'asd', '41231', 'ch@gmail.com', 'asd', ''),
+(6, '2016-04-05 01:57:26', 'asd', '41231', 'ch@gmail.com', 'asd', '');
 
 -- --------------------------------------------------------
 
@@ -153,12 +135,12 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`id`, `date`, `cust_email`, `message`, `status`) VALUES
-(1, '2016-04-04 18:45:54', 'alakneth@gmail.com', 'Hi there', '1'),
-(2, '2016-04-04 18:45:54', 'alakneth@gmail.com', 'asd', '1'),
-(3, '2016-04-05 01:13:14', 'alakneth@gmail.com', 'asdasd', '1'),
-(4, '2016-04-05 01:13:14', 'alakneth@gmail.com', 'asdasdasd', '1'),
-(5, '2016-09-22 09:56:29', 'alakneth@gmail.com', 'TEST', '1'),
-(6, '2016-12-30 09:15:29', 'alakneth@gmail.com', 'test', '0');
+(1, '2016-04-04 18:45:54', 'ch@gmail.com', 'Hi there', '1'),
+(2, '2016-04-04 18:45:54', 'ch@gmail.com', 'asd', '1'),
+(3, '2016-04-05 01:13:14', 'ch@gmail.com', 'asdasd', '1'),
+(4, '2016-04-05 01:13:14', 'ch@gmail.com', 'asdasdasd', '1'),
+(5, '2016-09-22 09:56:29', 'ch@gmail.com', 'TEST', '1'),
+(6, '2016-12-30 09:15:29', 'ch@gmail.com', 'test', '0');
 
 -- --------------------------------------------------------
 
@@ -296,7 +278,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `contact`, `address`, `pass`) VALUES
-(1, 'kennethabenojar', 'alakneth@gmail.com', '09489101882', '061 DAO ST MARIKINA HIEGHTS MARIKINA CITY', '1234'),
+(1, 'kennethabenojar', 'ch@gmail.com', '09489101882', '061 DAO ST MARIKINA HIEGHTS MARIKINA CITY', '1234'),
 (2, 'reyna', 'ar80kawasakininja@yahoo.com', '09489101882', '061 dao st marikina heights marikina city', '123'),
 (3, 'test', 'test@gmail.com', '1234', 'test', '1234'),
 (4, 'kier', 'kier.abenojar@gmail.com', '09993628811', 'marikina', '1234'),
