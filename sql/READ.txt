@@ -1,0 +1,9 @@
+artizan_cafe.sql
+   -empty template for the database
+   -1 user: ch@gmail.com | iamdbest
+
+conchos_cafe edited.sql
+   -edited minimal tables from the default
+
+working conchos_sisig.sql
+   -database used before creating the artizan cafe

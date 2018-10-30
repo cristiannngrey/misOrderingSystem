@@ -8,7 +8,7 @@ include "dbconn.php";
 	while($row9 = mysqli_fetch_array($result9)){
 		$name9 = $row9['name'];
 			
-			$sql8 = "INSERT INTO notifications values('','$name9',CURRENT_TIMESTAMP,'Logout from Conchos online ordering site','0')";
+			$sql8 = "INSERT INTO notifications values('','$name9',CURRENT_TIMESTAMP,'Logout from Artizan Cafe Cashier Portal','0')";
 			$result8 = mysqli_query($conn,$sql8); 
 
 				session_destroy();
