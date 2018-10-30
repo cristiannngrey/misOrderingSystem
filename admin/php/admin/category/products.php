@@ -4,7 +4,7 @@ include "dbconn.php";
 
   echo "<select name='' class='prodcat-btn' id='filter'>
             <option value='All'>All</option>
-            <option value='Sisig'>Sisig</option>
+            <option value='Coffee'>Coffee</option>
             <option value='Main-Meals'>Main Meals</option>
             <option value='For-Kids'>For Kids</option>
             <option value='Desserts'>Desserts</option>

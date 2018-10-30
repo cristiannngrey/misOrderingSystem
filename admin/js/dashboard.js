@@ -126,7 +126,7 @@ $(function(){
 								$('.product-container #Desserts').hide();
 								$('.product-container #For-Kids').hide();
 								$('.product-container #Main-Meals').hide();
-								$('.product-container #Sisig').hide();
+								$('.product-container #Coffee').hide();
 								setTimeout(function(){
 									$('.product-container #Extras').fadeIn();
 								},500);
@@ -136,7 +136,7 @@ $(function(){
 								$('.product-container #Desserts').hide();
 								$('.product-container #For-Kids').hide();
 								$('.product-container #Main-Meals').hide();
-								$('.product-container #Sisig').fadeOut();
+								$('.product-container #Coffee').fadeOut();
 								setTimeout(function(){
 									$('.product-container #Drinks').fadeIn();
 								},500);
@@ -146,7 +146,7 @@ $(function(){
 								$('.product-container #Drinks').fadeOut();
 								$('.product-container #For-Kids').fadeOut();
 								$('.product-container #Main-Meals').fadeOut();
-								$('.product-container #Sisig').fadeOut();
+								$('.product-container #Coffee').fadeOut();
 								setTimeout(function(){
 									$('.product-container #Desserts').fadeIn();
 								},500);
@@ -156,7 +156,7 @@ $(function(){
 								$('.product-container #Drinks').fadeOut();
 								$('.product-container #Desserts').fadeOut();
 								$('.product-container #Main-Meals').fadeOut();
-								$('.product-container #Sisig').fadeOut();
+								$('.product-container #Coffee').fadeOut();
 								setTimeout(function(){
 									$('.product-container #For-Kids').fadeIn();
 								},500);
@@ -166,19 +166,19 @@ $(function(){
 								$('.product-container #Drinks').fadeOut();
 								$('.product-container #Desserts').fadeOut();
 								$('.product-container #For-Kids').fadeOut();
-								$('.product-container #Sisig').fadeOut();
+								$('.product-container #Coffee').fadeOut();
 								setTimeout(function(){
 									$('.product-container #Main-Meals').fadeIn();
 								},500);
 						}
-						if(cat==='Sisig'){
+						if(cat==='Coffee'){
 								$('.product-container #Extras').fadeOut();
 								$('.product-container #Drinks').fadeOut();
 								$('.product-container #Desserts').fadeOut();
 								$('.product-container #Main-Meals').fadeOut();
 								$('.product-container #For-Kids').fadeOut();
 								setTimeout(function(){
-									$('.product-container #Sisig').fadeIn();
+									$('.product-container #Coffee').fadeIn();
 								},500);
 						}
 						if(cat==='All'){
@@ -186,7 +186,7 @@ $(function(){
 								$('.product-container #Drinks').fadeIn();
 								$('.product-container #Desserts').fadeIn();
 								$('.product-container #Main-Meals').fadeIn();
-								$('.product-container #Sisig').fadeIn();
+								$('.product-container #Coffee').fadeIn();
 									$('.product-container #For-Kids').fadeIn();
 						}
 
