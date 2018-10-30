@@ -20,7 +20,7 @@ if(isset($email)){ header('location:user'); } else {  }
 				<div class="a">
 					<span class=""><a href="home"><i class="fa fa-home"></i> <p class="rwd">Home</p></a></span>
 					<span class=""><a href="about"><i class="fa fa-star"></i> <p class="rwd">About</p></a></span>
-					<span class=" active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Gallery</p></a></span>
+					<span class=" active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Menu</p></a></span>
 					<span class=""><a href="contact"><i class="fa fa-phone"></i> <p class="rwd">Contact</p></a></span>
 				</div>
 				<div class="b"> 
@@ -41,7 +41,7 @@ if(isset($email)){ header('location:user'); } else {  }
 
 
 			<div style="width: 15%; margin-left: 20%;float:left;">
-				<h2 style="font-size: 2vw; font-style: italic;">Gallery</h2>
+				<h2 style="font-size: 2vw; font-style: italic;">Menu</h2>
 			</div>
 
 

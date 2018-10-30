@@ -19,7 +19,7 @@ if(isset($email)){ header('location:user'); } else {  }
 			<div class="header animated fadeInDown">
 				<div class="a"> 
 					<span class=""><a href="about"><i class="fa fa-star"></i> <p class="rwd">About</p></a></span>
-					<span class="active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Gallery</p></a></span>
+					<span class="active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Menu</p></a></span>
 					<span class=""><a href="contact"><i class="fa fa-phone"></i> <p class="rwd">Contact</p></a></span>
 				</div>
 				<div class="b"> 

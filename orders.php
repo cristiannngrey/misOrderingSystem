@@ -19,7 +19,7 @@ if(isset($email)){ } else { header('location:index'); }
 			<div class="header animated fadeInDown">
 				<div class="a"> 
 					<span class="active"><a href="orders"><i class="fa fa-folder-open active"></i> <p class="rwd active">Orders</p></a></span>
-					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Gallery</p></a></span>
+					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Menu</p></a></span>
 					<span class="" ng-controller="messages" ng-click="read($event)"><a href="http://mail.google.com" target="_blank"><i class="fa fa-envelope"></i> <p class="rwd">Message</p> <kbd ng-show="{{ msg }} >= 1" class="kbd">{{ msg }}</kbd></a></span>
 				</div>
 				<div class="b"> 
@@ -32,8 +32,8 @@ if(isset($email)){ } else { header('location:index'); }
 				</div>
 			</div>
 
-			<div class="cover2 animated fadeIn"> 
-			</div>
+			<!-- <div class="cover animated fadeIn"> 		
+			</div>		-->
 
 		        <div class="category animated fadeIn"> 
 				<button class="active">My Orders</button> 

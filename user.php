@@ -19,7 +19,7 @@ if(isset($email)){ } else { header('location:index'); }
 			<div class="header animated fadeInDown">
 				<div class="a"> 
 					<span class=""><a href="orders"><i class="fa fa-folder-open"></i> <p class="rwd">Orders</p></a></span>
-					<span class="active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Gallery</p></a></span>
+					<span class="active"><a href="user"><i class="fa fa-image active"></i> <p class="rwd active">Menu</p></a></span>
 					<span class="" ng-controller="messages" ng-click="read($event)"><a href="messages" target="_blank"><i class="fa fa-envelope"></i> <p class="rwd">Message</p> <kbd class="kbd" ng-show=" msg != 0">{{ msg }}</kbd></a></span>
 				</div>
 				<div class="b"> 

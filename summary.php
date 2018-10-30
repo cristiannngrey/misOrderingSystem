@@ -6,7 +6,7 @@ if(isset($email)){ } else { header('location:index'); }
 <!Doctype html>
 <html>
 	<head> 
-		<title>Conchos Home Of Sisig Goodness</title>
+		<title>Artizan Cafe</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">  
 		<link rel="icon" href="img/logo.png"> 
        	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -20,7 +20,7 @@ if(isset($email)){ } else { header('location:index'); }
 				<div class="a">
 					<span class=""><a href="home"><i class="fa fa-home"></i> <p class="rwd">Home</p></a></span>
 					<span class="active"><a href="orders"><i class="fa fa-folder-open active"></i> <p class="rwd active">Orders</p></a></span>
-					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Gallery</p></a></span>
+					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Menu</p></a></span>
 					<span class="" ng-controller="messages" ng-click="read($event)"><a href="http://mail.google.com" target="_blank"><i class="fa fa-envelope"></i> <p class="rwd">Message</p> <kbd ng-show="{{ msg }} >= 1" class="kbd">{{ msg }}</kbd></a></span>
 				</div>
 				<div class="b"> 

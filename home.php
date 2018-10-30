@@ -6,7 +6,7 @@ if(isset($email)){ header('location:user'); } else {  }
 <!Doctype html>
 <html>
 	<head> 
-		<title>Conchos Home Of Sisig Goodness</title>
+		<title>Artizan Cafe</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">  
 		<link rel="icon" href="img/logo.png"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -19,7 +19,7 @@ if(isset($email)){ header('location:user'); } else {  }
 			<div class="header animated fadeInDown">
 				<div class="a"> 
 					<span class=""><a href="about"><i class="fa fa-star"></i> <p class="rwd">About</p></a></span>
-					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Gallery</p></a></span>
+					<span class=""><a href="user"><i class="fa fa-image"></i> <p class="rwd">Menu</p></a></span>
 					<span class=""><a href="contact"><i class="fa fa-phone"></i> <p class="rwd">Contact</p></a></span>
 				</div>
 				<div class="b"> 
@@ -37,7 +37,7 @@ if(isset($email)){ header('location:user'); } else {  }
 	
 			<div class="category animated fadeIn">
 				<button id="All" class="active">All</button>
-				<button id="Sisig" class="">Sisig</button>
+				<button id="Coffee" class="">Coffee</button>
 				<button id="Main-Meals" class="">Main Meals</button>
 				<button id="For-Kids" class="">For Kids</button>
 				<button id="Desserts" class="">Desserts</button>
