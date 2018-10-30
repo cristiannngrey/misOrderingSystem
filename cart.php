@@ -32,8 +32,8 @@ if(isset($email)){ } else { header('location:index'); }
 				</div>
 			</div>
 
-			<div class="cover2 animated fadeIn"> 
-			</div>
+			<!--	<div class="cover1 animated fadeIn"> 
+			</div>		-->
 
 		        <div class="category animated fadeIn"> 
 				<button class="active">My Cart</button> 
