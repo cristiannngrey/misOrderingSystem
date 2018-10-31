@@ -1,7 +1,7 @@
 <?php
 
 $page = $_SERVER['PHP_SELF'];
-$sec = "5";
+$sec = "5"; //interval in seconds for autorefreshing page content
 
 session_start();
 $admin = $_SESSION['admin'];
@@ -44,7 +44,7 @@ if(isset($admin)){} else { header('location:login'); }
 		<script type="text/javascript" src="../js/admin-ajax/form-ajax.js"></script>
 		<script type="text/javascript" src="../js/form_jquery.js"></script>
 
-		</script>
+
 	</head>
 
 	<body>
