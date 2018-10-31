@@ -34,7 +34,7 @@ tr td button{outline: none; background-color: #e74c3c; border: none; color: whit
 
 .popup{display:none; font-size: 1vw; position: fixed; top:35%; width: 15%; left: 42.5%; background-color: #2c3e50; color:white; box-shadow: 0px 0px 3px lightgray; z-index: 150; padding: 1%; text-align: center; border-radius:4%; -webkit-border-radius:4%; -o-border-radius:4%; -moz-border-radius:4%; }
 .popup .ok{border:none; background-color:#3498db ;color: white; font-size: 1vw; margin-top: 3%; border-radius:7%; -webkit-border-radius:7%; -o-border-radius:7%; -moz-border-radius:7%; padding-left: 3%; text-align: center; width: 30%;}
-.popup .cancel{border:none; background-color:#e74c3c ;color: white; font-size: 1vw; margin-top: 3%; border-radius:5%; -webkit-border-radius:5%; -o-border-radius57%; -moz-border-radius:5%; padding-left: 3%; text-align: center; width: 30%;}
+.popup .cancel{border:none; background-color:#e74c3c ;color: white; font-size: 1vw; margin-top: 3%; border-radius:5%; -webkit-border-radius:5%; -o-border-radius:57%; -moz-border-radius:5%; padding-left: 3%; text-align: center; width: 30%;}
 
 .product-container{width: 100%; float: left;}
 .product-container .item{word-break: break-all; height: auto; width: 18%; margin-right: 1%; margin-left:1%; float: left; border: 1px solid #2c3e50; padding: 1%; margin-top: 1%; margin-bottom: 1%;}
@@ -140,7 +140,7 @@ tr td button{outline: none; background-color: #e74c3c; border: none; color: whit
 	tr td, tr th{font-size: 3vw;}
 	.popup{display:none; font-size: 5vw; position: fixed; top:30%; width: 70%; left: 15%;  background-color: #2c3e50; color:white; box-shadow: 3px 3px 3px lightgray; z-index: 150; padding: 3%; text-align: center; border-radius:2%; -webkit-border-radius:2%; -o-border-radius:2%; -moz-border-radius:2%; }
 	.popup .ok{border:none; background-color:#3498db ;color: white; font-size: 3vw; margin-top: 3%; border-radius:4%; -webkit-border-radius:4%; -o-border-radius:4%; -moz-border-radius:4%; padding-left: 3%; text-align: center; width: 30%;}
-	.popup .cancel{border:none; background-color:#e74c3c ;color: white; font-size: 3vw; margin-top: 3%; border-radius:4%; -webkit-border-radius:4%; -o-border-radius47%; -moz-border-radius:4%; padding-left: 3%; text-align: center; width: 30%;}
+	.popup .cancel{border:none; background-color:#e74c3c ;color: white; font-size: 3vw; margin-top: 3%; border-radius:4%; -webkit-border-radius:4%; -o-border-radius:47%; -moz-border-radius:4%; padding-left: 3%; text-align: center; width: 30%;}
 	.product-container .item{width: 99%; padding-bottom: 3%; height:auto !important; padding-top: 3%; margin-right: 0.5%; margin-left: 0.5%;}
 	.product-container .item .name{font-size: 5vw;}
 	.product-container .item .desc{font-size: 3vw;}
